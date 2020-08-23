@@ -1,0 +1,321 @@
+@charset "utf-8";
+html{
+    scroll-behavior: smooth;} /*comando que faz um scrol suav*/
+    
+    a:link 
+    { 
+     text-decoration:none; /*remoção do sublinhado*/
+    } 
+
+
+/*
+FORMATAÇÃO DO MENU NAV
+e formatação da fontes e tamanhos dos h
+*/
+
+/****************************MENU HAMBURGUE INTERATIVO******************************************/
+
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+
+ 
+ #menuHamburgue /*definido a posição do menu */
+ {
+   display: block;
+   position: absolute;
+   top: 50px;
+   left: 400px;
+   
+   z-index: 1;
+   
+   -webkit-user-select: none;
+   user-select: none;
+   
+ }
+ 
+ #menuHamburgue a
+ {
+   text-decoration: none;
+   color: #232323;
+   
+   transition: color 0.3s ease;
+   
+ }
+ 
+ #menuHamburgue a:hover /*hover quando passamos o mouse ele muda de cor*/
+ {
+   color: rgb(0, 204, 255);
+ }
+ 
+ 
+ #menuHamburgue input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+ 
+ /*
+  * Just a quick hamburger
+  */
+ #menuHamburgue span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #cdcdcd;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #menuHamburgue span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuHamburgue span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuHamburgue input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background:rgb(0, 204, 255);
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+ #menuHamburgue input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuHamburgue input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu
+ {
+   position: relative;
+   width: 300px;
+   margin: -100px 0 0 -350px;
+   padding: 50px;
+   padding-top: 125px;
+   
+   background: #f1f1f1;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+   
+   transform-origin: 0% 0%;
+   transform: translate(0,-100%);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+ }
+ 
+ /*
+  * And let's slide it in from the left
+  */
+ #menuHamburgue input:checked ~ ul
+ {
+   transform: none;
+  
+ }
+header {
+    background-color: rgb(32, 32, 32);
+}
+.img-position1 {/*posição do logo inicial*/
+    display: flex;
+    margin-left: -50px;
+    margin-top: -80px;
+    
+}
+
+/******************************************************************************************************
+*/
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900px;
+    color: #f1f1f1;
+    font-size: 33pt;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f1f1f1;
+    margin: 0;
+}
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12pt;
+    color: #f1f1f1;
+    margin: 0;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200px;
+    text-align: center;
+    color: #f1f1f1;
+    margin: 0;
+}
+body {
+    background-color: rgb(32,32,32);
+}
+
+
+/********************************Formatação barra de skill*******************************************/
+
+div#skills {
+    background-color: rgb(32, 32, 32);
+
+}
+.container {
+    width: 400px;
+    margin:0;
+    padding: 10px;
+}
+div#skills li {
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500px;
+    font-family: 'Alata', sans-serif;
+
+
+}
+div#skills li:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgb(88, 102, 101);
+    border-radius: 1000px;
+
+}
+div#skills li:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0%;
+    height: 15px;
+    background-color: rgb(0, 204, 255);
+    border-radius: 1000px;
+    animation-duration: 13s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+}
+div#skills li.html:after {
+    animation-name: html;
+
+}
+@keyframes html {
+    to {
+        width: 60%;
+    }
+}
+div#skills li.css:after {
+    animation-name: css;
+
+}
+@keyframes css {
+    to {
+        width: 40%;
+    }
+}
+div#skills li.js:after {
+    animation-name: js;
+
+}
+@keyframes js {
+    to {
+        width: 5%;
+    }
+}
+div#skills li.sk:after {
+    animation-name: sk;
+
+}
+@keyframes sk {
+    to {
+        width: 10%;
+    }
+}
+
+/***********************************DIVI HELLO*******************************************/
+
+.position-h3 {
+    color: #9c9c9c;
+    padding: 20px;
+}
+.position-p{
+    color: #c7c7c7;
+    padding: 20px;
+}
+.name-principal {
+    font-family: 'Space Mono', monospace;
+}
