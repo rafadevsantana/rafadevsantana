@@ -8,15 +8,69 @@ html{
      text-decoration:none; /*remoção do sublinhado*/
     } 
 
+/***********************************estilizando o backgroud**************************************/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.name-h1 {
 
-/*
-FORMATAÇÃO DO MENU NAV
-e formatação da fontes e tamanhos dos h
-*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900px;
+    font-size: 2rem;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 1rem 1rem;
+       
+}
 
-/****************************MENU HAMBURGUE INTERATIVO******************************************/
+.gradiente-bg {
+    background: linear-gradient(45deg,#2f2519,#4a3f35,#fa7d09,#ff4301);
+    background-size: 500%,500%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: colors 15s ease-in-out infinite;
+}
 
-/*
+    @keyframes colors {
+        0% {
+            background-position: 0%,50%;
+        }
+        50% {
+            background-position: 100%,50%;
+        }
+        100% {
+            background-position: 0%,50%;
+        }
+        
+    }
+    .bt-myskills {
+        position: absolute;
+        font-family: 'Acme', sans-serif;
+        font-weight: 900px;
+        font-size: 20pt;
+        color: black;
+        top: 550px;
+        background:#cdcdcd;
+        width: 150px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        border-radius: 15px;
+        text-transform: uppercase;
+    }
+    .bt-myskills:hover {
+        background: rgb(33, 148, 177);
+        color: white;
+        transition-duration: .4s;
+    }
+
+    /***************************MENU HAMBURGE*******************************************/
+
+    /*
  * Made by Erik Terwan
  * 24th of November 2015
  * MIT License
@@ -156,7 +210,7 @@ e formatação da fontes e tamanhos dos h
    transform-origin: 0% 0%;
    transform: translate(0,-100%);
    
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);/*velocidade e controle da trasição*/
  }
  
  #menu li
@@ -178,70 +232,81 @@ e formatação da fontes e tamanhos dos h
 header {
     background-color: rgb(32, 32, 32);
 }
-.img-position1 {/*posição do logo inicial*/
+
+
+/***********************section*********************************/
+
+.div1 {
+    position: absolute;
     display: flex;
-    margin-left: -50px;
-    margin-top: -80px;
-    
+    justify-content: center;
+    top: 866px;
+    background: #f6f6f6;
+    width: 485px;
+    height: 866px;
+    margin: 0px;
+    border-radius: 15px;
+}
+.nameh2 {
+    display: block;
+    position: absolute;
+    margin-left: 0px;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25pt;
+    text-transform: uppercase;
+}
+.position-p{
+    text-align: center;
+    margin: 20px;
+    padding-top: 150px;
+    padding-left: -200px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;    
 }
 
-/******************************************************************************************************
-*/
-h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900px;
-    color: #f1f1f1;
-    font-size: 33pt;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
+.img-position {
+    position: absolute;
+    top: 360px;
+    width: 400px;
 }
-h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #f1f1f1;
-    margin: 0;
-}
-h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200px;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 12pt;
-    color: #f1f1f1;
-    margin: 0;
-}
-p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200px;
-    text-align: center;
-    color: #f1f1f1;
-    margin: 0;
-}
-body {
-    background-color: rgb(32,32,32);
-}
+/*************************estilizando a div myskills*****************/
 
+.div2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 1732px;
+    background: #dddddd;
+    width: 485px;
+    height: 500px;
+    margin: 0px;
+    border-radius: 15px;
+    height: 866px;
+}
 
 /********************************Formatação barra de skill*******************************************/
 
 div#skills {
-    background-color: rgb(32, 32, 32);
+    background-color: #dadada;
+    
 
 }
 .container {
     width: 400px;
     margin:0;
     padding: 10px;
+    position: absolute;
+    margin-left: -430px;
+    top: 350px;
 }
 div#skills li {
     position: relative;
     list-style: none;
-    margin: 50px 0;
-    font-weight: 500px;
-    font-family: 'Alata', sans-serif;
+    margin: 54px 0;
+    font-weight: 700px;
+    font-family: 'Acme', sans-serif;
 
 
 }
@@ -254,6 +319,7 @@ div#skills li:before {
     height: 15px;
     background-color: rgb(88, 102, 101);
     border-radius: 1000px;
+    
 
 }
 div#skills li:after {
@@ -307,16 +373,31 @@ div#skills li.sk:after {
     }
 }
 
-/***********************************DIVI HELLO*******************************************/
+/******************estilizando o ctts******************************/
 
-.position-h3 {
-    color: #9c9c9c;
-    padding: 20px;
+.git {
+    position: absolute;
+    top: 800px;
+    right: 150px;
+    width: 50px;
 }
-.position-p{
-    color: #c7c7c7;
-    padding: 20px;
+.link {
+    position: absolute;
+    top: 800px;
+    right: 250px;
+    width: 50px;
 }
-.name-principal {
-    font-family: 'Space Mono', monospace;
+.git:hover  {
+    box-shadow: 1px 1px 10px black;
+    border-radius: 50%;
+    transition-duration: .4s ;
+    animation: ease-in-out;
 }
+.link:hover  {
+    box-shadow: 1px 1px 10px black;
+    border-radius: 10px;
+    transition-duration: .4s ;
+    animation: ease-in-out;
+}
+/**********************scrol bt**********************************/
+
