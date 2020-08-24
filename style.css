@@ -9,13 +9,10 @@ html{
     } 
 
 /***********************************estilizando o backgroud**************************************/
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.name-h1 {
 
+
+.name-h1 {
+    margin-left: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 900px;
     font-size: 20pt;
@@ -33,6 +30,7 @@ html{
     justify-content: center;
     height: 100vh;
     animation: colors 15s ease-in-out infinite;
+    border-radius: 20px;
 }
 
     @keyframes colors {
@@ -86,9 +84,9 @@ html{
  #menuHamburgue /*definido a posição do menu */
  {
    display: flexbox;
-   position: absolute;
+   position: fixed;
    top: 50px;
-   left: 320px;
+   left: 400px;
    
    z-index: 1;
    
@@ -237,50 +235,69 @@ header {
 /***********************section*********************************/
 
 .div1 {
-    position: absolute;
+    
     display: flex;
     justify-content: center;
     top: 817px;
-    background: #f6f6f6;
-    width: 485px;
-    height: 866px;
-    margin: 0px;
+    background: #e7e7e7;
+    align-items: center;
+    height: 100vh;
     border-radius: 15px;
 }
+.nameh1 {
+    position:absolute;
+    top: 890px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25pt;
+    text-transform: uppercase;
+}
 .nameh2 {
-    display: block;
-    position: absolute;
-    margin-left: 0px;
-    text-align: center;
-    padding-top: 30px;
+    position:absolute;
+    top: 1700px;
     font-family: 'Poppins', sans-serif;
     font-size: 25pt;
     text-transform: uppercase;
 }
 .position-p{
+    display: flexbox;
+    position: relative;
     text-align: center;
-    margin: 20px;
-    padding-top: 150px;
-    padding-left: -200px;
+    margin: auto;
+    top: -120px;
+    width: 350px;
+    
     font-family: 'Poppins', sans-serif;
-    font-size: 15pt;    
+    font-size: 15pt; 
+     
+}
+.position-p1{
+    display: flexbox;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    top: 156px;
+    width: 350px;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt; 
+     
 }
 
 .img-position {
-    position: absolute;
-    top: 360px;
+    display: flexbox;
+    position: relative;
     width: 400px;
+    padding-top: 40px;
 }
 /*************************estilizando a div myskills*****************/
 
 .div2 {
-    position: absolute;
+    
     display: flex;
     justify-content: center;
     top: 1683px;
     background: #dddddd;
-    width: 485px;
-    height: 500px;
+    height: 100vh;
     margin: 0px;
     border-radius: 15px;
     height: 866px;
@@ -295,11 +312,12 @@ div#skills {
 }
 .container {
     width: 400px;
-    margin:0;
-    padding: 10px;
-    position: absolute;
+    margin:auto;
+    padding-right: 50px;
+    position: relative;
     margin-left: -430px;
     top: 350px;
+    justify-items: center;
 }
 div#skills li {
     position: relative;
@@ -377,13 +395,14 @@ div#skills li.sk:after {
 
 .git {
     position: absolute;
-    top: 800px;
+    top: 2440px;
     right: 150px;
     width: 50px;
+    justify-items: center;
 }
 .link {
     position: absolute;
-    top: 800px;
+    top: 2440px;
     right: 250px;
     width: 50px;
 }
