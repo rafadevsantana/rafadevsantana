@@ -18,7 +18,7 @@ html{
 
     font-family: 'Poppins', sans-serif;
     font-weight: 900px;
-    font-size: 2rem;
+    font-size: 20pt;
     color: #fff;
     border: 3px solid #fff;
     padding: 1rem 1rem;
@@ -26,7 +26,7 @@ html{
 }
 
 .gradiente-bg {
-    background: linear-gradient(45deg,#2f2519,#4a3f35,#fa7d09,#ff4301);
+    background: linear-gradient(45deg,#0e9aa7,#3da4ab,#f6cd61,#fe8a71);
     background-size: 500%,500%;
     display: flex;
     align-items: center;
@@ -52,9 +52,9 @@ html{
         font-family: 'Acme', sans-serif;
         font-weight: 900px;
         font-size: 20pt;
-        color: black;
+        color: white;
         top: 550px;
-        background:#cdcdcd;
+        background:#0e9aa7;
         width: 150px;
         height: 60px;
         text-align: center;
@@ -63,7 +63,7 @@ html{
         text-transform: uppercase;
     }
     .bt-myskills:hover {
-        background: rgb(33, 148, 177);
+        background: rgb(28, 94, 110);
         color: white;
         transition-duration: .4s;
     }
@@ -85,10 +85,10 @@ html{
  
  #menuHamburgue /*definido a posição do menu */
  {
-   display: block;
+   display: flexbox;
    position: absolute;
    top: 50px;
-   left: 400px;
+   left: 320px;
    
    z-index: 1;
    
@@ -140,7 +140,7 @@ html{
    margin-bottom: 5px;
    position: relative;
    
-   background: #cdcdcd;
+   background: #f1f1f1;
    border-radius: 3px;
    
    z-index: 1;
@@ -198,7 +198,7 @@ html{
  {
    position: relative;
    width: 300px;
-   margin: -100px 0 0 -350px;
+   margin: -100px 0 0 -250px;
    padding: 50px;
    padding-top: 125px;
    
@@ -240,7 +240,7 @@ header {
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 866px;
+    top: 817px;
     background: #f6f6f6;
     width: 485px;
     height: 866px;
@@ -277,7 +277,7 @@ header {
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 1732px;
+    top: 1683px;
     background: #dddddd;
     width: 485px;
     height: 500px;
