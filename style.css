@@ -26,7 +26,7 @@ html{
 }
 
 .gradiente-bg {
-    background: linear-gradient(45deg,#1b2124,#383e47,#2fd0d3,#2a2820);
+    background: linear-gradient(45deg,#2f2519,#4a3f35,#fa7d09,#ff4301);
     background-size: 500%,500%;
     display: flex;
     align-items: center;
@@ -210,7 +210,7 @@ html{
    transform-origin: 0% 0%;
    transform: translate(0,-100%);
    
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);/*velocidade e controle da trasição*/
  }
  
  #menu li
@@ -232,12 +232,8 @@ html{
 header {
     background-color: rgb(32, 32, 32);
 }
-.img-position1 {/*posição do logo inicial*/
-    display: flex;
-    margin-left: -50px;
-    margin-top: -80px;
-    
-}
+
+
 /***********************section*********************************/
 
 .div1 {
@@ -259,6 +255,7 @@ header {
     padding-top: 30px;
     font-family: 'Poppins', sans-serif;
     font-size: 25pt;
+    text-transform: uppercase;
 }
 .position-p{
     text-align: center;
@@ -293,6 +290,7 @@ header {
 
 div#skills {
     background-color: #dadada;
+    
 
 }
 .container {
@@ -301,14 +299,14 @@ div#skills {
     padding: 10px;
     position: absolute;
     margin-left: -430px;
-    top: 400px;
+    top: 350px;
 }
 div#skills li {
     position: relative;
     list-style: none;
     margin: 54px 0;
-    font-weight: 500px;
-    font-family: 'Alata', sans-serif;
+    font-weight: 700px;
+    font-family: 'Acme', sans-serif;
 
 
 }
@@ -321,6 +319,7 @@ div#skills li:before {
     height: 15px;
     background-color: rgb(88, 102, 101);
     border-radius: 1000px;
+    
 
 }
 div#skills li:after {
@@ -373,3 +372,32 @@ div#skills li.sk:after {
         width: 10%;
     }
 }
+
+/******************estilizando o ctts******************************/
+
+.git {
+    position: absolute;
+    top: 800px;
+    right: 150px;
+    width: 50px;
+}
+.link {
+    position: absolute;
+    top: 800px;
+    right: 250px;
+    width: 50px;
+}
+.git:hover  {
+    box-shadow: 1px 1px 10px black;
+    border-radius: 50%;
+    transition-duration: .4s ;
+    animation: ease-in-out;
+}
+.link:hover  {
+    box-shadow: 1px 1px 10px black;
+    border-radius: 10px;
+    transition-duration: .4s ;
+    animation: ease-in-out;
+}
+/**********************scrol bt**********************************/
+
