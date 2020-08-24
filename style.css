@@ -12,6 +12,7 @@ html{
 
 
 .name-h1 {
+    position: absolute;
     margin-left: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 900px;
@@ -83,10 +84,10 @@ html{
  
  #menuHamburgue /*definido a posição do menu */
  {
-   display: flexbox;
-   position: fixed;
+   
+   position: absolute;
    top: 50px;
-   left: 400px;
+   left: 350px;
    
    z-index: 1;
    
@@ -312,7 +313,7 @@ div#skills {
 }
 .container {
     width: 400px;
-    margin:auto;
+    
     padding-right: 50px;
     position: relative;
     margin-left: -430px;
