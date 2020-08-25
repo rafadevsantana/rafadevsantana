@@ -256,9 +256,8 @@ header {
     top: 1683px;
     background: #dddddd;
     height: 100vh;
-    margin: 0px;
     border-radius: 15px;
-    height: 866px;
+    
 }
 
 /********************************Formatação barra de skill*******************************************/
@@ -273,7 +272,7 @@ div#skills {
     
     padding-right: 50px;
     position: relative;
-    top: 350px;
+    top: 390px;
     justify-items: center;
 }
 div#skills li {
@@ -350,23 +349,38 @@ div#skills li.sk:after {
 
 /******************estilizando o ctts******************************/
 
-.git {
-    position: relative;
-    top: 450px;
-    margin:auto;
-    width: 50px;
-    justify-items: center;
-    margin-left: 120px;
 
-}
-.link {
-    position: relative;
-    justify-items: center;
-    top: 450px;
-    margin: auto;
-    width: 50px;
-    margin-left: 50px;
-}
 
 /**********************scrol bt**********************************/
 
+
+.icons span:before {
+    font-size: 25px;
+    position: relative;
+    justify-items: center;
+    top: 800px;
+    right: 400px; 
+    
+}
+.flaticon-github:hover:before {
+    font-size: 30px;
+    color: blue;
+    transition-duration: .3s;
+    
+}
+.flaticon-facebook:hover:before {
+    font-size: 30px;
+    color: rgb(0, 110, 255);
+    transition-duration: .3s;
+    
+}.flaticon-gmail:hover:before {
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    transition-duration: .3s;
+    
+}.flaticon-linkedin:hover:before {
+    font-size: 30px;
+    color: rgb(5, 181, 187);
+    transition-duration: .3s;
+    
+}
