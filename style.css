@@ -198,7 +198,7 @@ html{
  {
    position: relative;
    width: 200px;
-   margin: -100px 0 0 -200px;
+   margin: -100px 0 0 -240px;
    padding: 50px;
    padding-top: 125px;
    
@@ -234,7 +234,7 @@ header {
 }
 
 
-/***********************section*********************************/
+/***********************section div about*********************************/
 
 .div1 {
     
@@ -246,55 +246,7 @@ header {
     height: 100vh;
     border-radius: 15px;
 }
-.nameh1 {
-    position:relative;
-    top: -300px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 25pt;
-    text-transform: uppercase;
-    padding-left: 250px;
-}
-.nameh2 {
-    position:relative;
-    top: 100px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 25pt;
-    text-transform: uppercase;
 
-}
-.position-p{
-    
-    position: relative;
-    text-align: center;
-    margin-right:200px;
-    top: -120px;
-    width: 350px;
-    
-    font-family: 'Poppins', sans-serif;
-    font-size: 15pt; 
-     
-}
-.position-p1{
-    
-    position: relative;
-    text-align: center;
-    margin-right: 300px;
-    top: 156px;
-    width: 350px;
-    
-    font-family: 'Poppins', sans-serif;
-    font-size: 15pt; 
-     
-}
-
-.img-position {
-    display: flexbox;
-    top: 80px;
-    position: relative;
-    width: 350px;
-    margin-right: 80px ;
-    
-}
 /*************************estilizando a div myskills*****************/
 
 .div2 {
@@ -321,7 +273,6 @@ div#skills {
     
     padding-right: 50px;
     position: relative;
-    margin-left: -260px;
     top: 350px;
     justify-items: center;
 }
@@ -402,27 +353,20 @@ div#skills li.sk:after {
 .git {
     position: relative;
     top: 450px;
-    right: 100px;
+    margin:auto;
     width: 50px;
     justify-items: center;
+    margin-left: 120px;
+
 }
 .link {
     position: relative;
+    justify-items: center;
     top: 450px;
-    right: 250px;
+    margin: auto;
     width: 50px;
+    margin-left: 50px;
 }
-.git:hover  {
-    box-shadow: 1px 1px 10px black;
-    border-radius: 50%;
-    transition-duration: .4s ;
-    animation: ease-in-out;
-}
-.link:hover  {
-    box-shadow: 1px 1px 10px black;
-    border-radius: 10px;
-    transition-duration: .4s ;
-    animation: ease-in-out;
-}
+
 /**********************scrol bt**********************************/
 
