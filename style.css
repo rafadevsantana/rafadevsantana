@@ -252,6 +252,7 @@ header {
     font-family: 'Poppins', sans-serif;
     font-size: 25pt;
     text-transform: uppercase;
+    padding-left: 250px;
 }
 .nameh2 {
     position:relative;
@@ -262,10 +263,10 @@ header {
 
 }
 .position-p{
-    display: flexbox;
+    
     position: relative;
     text-align: center;
-    margin: auto;
+    margin-right:200px;
     top: -120px;
     width: 350px;
     
@@ -274,10 +275,10 @@ header {
      
 }
 .position-p1{
-    display: flexbox;
+    
     position: relative;
     text-align: center;
-    margin: auto;
+    margin-right: 300px;
     top: 156px;
     width: 350px;
     
@@ -288,10 +289,11 @@ header {
 
 .img-position {
     display: flexbox;
-    top: -40px;
+    top: 80px;
     position: relative;
     width: 350px;
-    padding-top: 40px;
+    margin-right: 80px ;
+    
 }
 /*************************estilizando a div myskills*****************/
 
