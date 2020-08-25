@@ -198,7 +198,7 @@ html{
  {
    position: relative;
    width: 200px;
-   margin: -100px 0 0 -300px;
+   margin: -100px 0 0 -200px;
    padding: 50px;
    padding-top: 125px;
    
@@ -247,18 +247,19 @@ header {
     border-radius: 15px;
 }
 .nameh1 {
-    position:absolute;
-    top: 690px;
+    position:relative;
+    top: -300px;
     font-family: 'Poppins', sans-serif;
     font-size: 25pt;
     text-transform: uppercase;
 }
 .nameh2 {
-    position:absolute;
-    top: 1580px;
+    position:relative;
+    top: 100px;
     font-family: 'Poppins', sans-serif;
     font-size: 25pt;
     text-transform: uppercase;
+
 }
 .position-p{
     display: flexbox;
@@ -289,7 +290,7 @@ header {
     display: flexbox;
     top: -40px;
     position: relative;
-    width: 400px;
+    width: 350px;
     padding-top: 40px;
 }
 /*************************estilizando a div myskills*****************/
@@ -318,7 +319,7 @@ div#skills {
     
     padding-right: 50px;
     position: relative;
-    margin-left: -310px;
+    margin-left: -260px;
     top: 350px;
     justify-items: center;
 }
@@ -397,15 +398,15 @@ div#skills li.sk:after {
 /******************estilizando o ctts******************************/
 
 .git {
-    position: absolute;
-    top: 2340px;
-    right: 150px;
+    position: relative;
+    top: 450px;
+    right: 100px;
     width: 50px;
     justify-items: center;
 }
 .link {
-    position: absolute;
-    top: 2340px;
+    position: relative;
+    top: 450px;
     right: 250px;
     width: 50px;
 }
