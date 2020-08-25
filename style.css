@@ -248,14 +248,14 @@ header {
 }
 .nameh1 {
     position:absolute;
-    top: 790px;
+    top: 690px;
     font-family: 'Poppins', sans-serif;
     font-size: 25pt;
     text-transform: uppercase;
 }
 .nameh2 {
     position:absolute;
-    top: 1680px;
+    top: 1580px;
     font-family: 'Poppins', sans-serif;
     font-size: 25pt;
     text-transform: uppercase;
@@ -287,7 +287,7 @@ header {
 
 .img-position {
     display: flexbox;
-    top: -20px;
+    top: -40px;
     position: relative;
     width: 400px;
     padding-top: 40px;
@@ -318,7 +318,7 @@ div#skills {
     
     padding-right: 50px;
     position: relative;
-    margin-left: -380px;
+    margin-left: -310px;
     top: 350px;
     justify-items: center;
 }
@@ -398,14 +398,14 @@ div#skills li.sk:after {
 
 .git {
     position: absolute;
-    top: 2440px;
+    top: 2340px;
     right: 150px;
     width: 50px;
     justify-items: center;
 }
 .link {
     position: absolute;
-    top: 2440px;
+    top: 2340px;
     right: 250px;
     width: 50px;
 }
